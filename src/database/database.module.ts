@@ -8,7 +8,9 @@ import { ConnectionOptions,  createConnection } from 'typeorm';
             useValue: createConnection({
             type: 'postgres',
             host: 'localhost',
-            port: 5432
+            port: 5432,
+            username: 'postgres',
+            password: 'pass123'
           }),
         }
     ]
